@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>Iris Dataset Visualization</h1>
+
+    <h2>Dataframe</h2>
+    {{ df.to_html()|safe }}
+
+    <h2>Scatter Plot</h2>
+    <img src="data:image/png;base64,{{ plot_div }}" alt="Scatter Plot">
+</body>
+</html>
